@@ -1,18 +1,15 @@
 //package berbeda, bukan subclass class main
 
-import base.Produk;
-
 public class Main {
 
     public static void main(String[] args) {
         Produk p = new Produk("Indomie Goreng", 3500, 100, "Makanan");
-        
+        System.err.println(p.getNama());
+        System.err.println(p.getHarga());
 
-        System.out.println(p.stok);
-        System.out.println(p.harga);
-        System.out.println(p.kategori);
-        System.out.println(p.nama);
-    
+
+        p.setHarga(4000);
+        System.err.println(p.getHarga());
     }
     
 }
