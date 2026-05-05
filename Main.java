@@ -3,13 +3,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        Produk p = new Produk("Indomie Goreng", 3500, 100, "Makanan");
-        System.err.println(p.getNama());
-        System.err.println(p.getHarga());
-
-
-        p.setHarga(4000);
-        System.err.println(p.getHarga());
+        Elektronik mesinCuci = new Elektronik("samsung", 2000000, 5, "Elektronik", 365);
+        
+        mesinCuci.setGaransi(0);
+        mesinCuci.tampilkanData();
     }
     
 }
