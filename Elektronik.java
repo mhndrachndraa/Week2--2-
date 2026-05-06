@@ -10,5 +10,13 @@ class Elektronik extends Produk {
         this.garansiTahun = garansiTahun;
     }
 
-   
+    public String getMerek() {
+        return merek;
+    }
+
+    public int getGaransiTahun() {
+        return garansiTahun;
+    }
+
+    
 }
