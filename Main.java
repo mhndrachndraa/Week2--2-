@@ -4,9 +4,9 @@ public class Main {
 
         Elektronik laptop = new Elektronik("Laptop Asus", "Asus", 8500000, 10, 2);
         Elektronik hp = new Elektronik("HP Samsung", "Samsung", 3200000, 25, 1);
-        Makanan indomie = new Makanan("Indomie Goreng", 3500, 100, "2026-12-01", "Mie Instan");
-        Roti roti = new Makanan("Roti Tawar", 8000, 50, "2026-04-30", "Roti");
 
+        Makanan indomie = new Makanan("Indomie Goreng", 3500, 100, "Mie Instan", 30);
+        Makanan roti = new Makanan("Roti Tawar", 8000, 50, "Roti", 7);
         // — Overriding — satu nama method untuk semua
         System.out.println("==== DAFTAR PRODUK ====");
         laptop.tampilInfo(); // versi Elektronik
@@ -39,7 +39,7 @@ public class Main {
         System.out.println("\nIndomie x10 (diskon otomatis)");
         System.out.println(" Subtotal : Rp" + indomie.hitungTotalHarga(10));
         System.out.println(" Diskon   : Rp" + indomie.hitungDiskon(10));
-        System.out.println(" Total    : Rp" + indomie.hitungHargaSetelahDiskon(10));
+        System.out.println(" Total    : Rp" + indomie.hitungHargaSetelahDiskon(10, 10));
 
         // Versi 2 — diskon custom 15% (misal promo spesial)
         System.out.println("\nRoti x5 (diskon custom 15%)");
