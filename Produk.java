@@ -1,9 +1,8 @@
-
-public class Produk {
+abstract class Produk {
     private String nama; //hanya bisa diakses di dalam class Produk
-    String kategori; // hanya bisa diakses dalam package toko
-    protected double harga; //bisa diakses subclass meskipun beda package
-    public int stok; //bisa diakses dari mana saja
+    private String kategori; // hanya bisa diakses dalam package toko
+    private double harga; //bisa diakses subclass meskipun beda package
+    private int stok; //bisa diakses dari mana saja
 
     public Produk(String nama, double harga, int stok, String kategori){
         this.nama = nama;
@@ -26,6 +25,7 @@ public class Produk {
     public void setStok(int stok){
         this.stok = stok;
     }
+   
 
 
     public void tampilInfo(){
