@@ -26,7 +26,10 @@ public class Makanan extends Produk {
     public double hitungTotalHargaDiskon(int jumlahBeli, double persenDiskon) {
         return hitungTotalHarga(jumlahBeli) * (persenDiskon / 100);
     }
-    
+    public double hitungHargaSetelahDiskon(int jumlahBeli, double persenDiskon) {
+        return hitungTotalHarga(jumlahBeli) - hitungTotalHargaDiskon(jumlahBeli, persenDiskon);
+    }
+
 
 
     @Override
