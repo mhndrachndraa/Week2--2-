@@ -18,5 +18,16 @@ class Elektronik extends Produk {
         return garansiTahun;
     }
 
-    
+    // OVERRIDING tampilInfo() — versi Elektronik
+    @Override
+    public void tampilInfo() {
+        System.out.println("[ELEKTRONIK]");
+        System.out.println("Nama   : " + getNama());
+        // super.tampilInfo();
+        System.out.println("Merek  : " + merek);
+        System.out.println("Garansi: " + garansiTahun + " tahun");
+        System.out.println("=========");
+    }
+
+   
 }
