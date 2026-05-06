@@ -1,23 +1,6 @@
-    public class Elektronik extends Produk {
-        private int garansi;
-        public Elektronik(String nama, double harga, int stok, String kategori, int garansi) {
-            super(nama, harga, stok, kategori);
-            this.garansi = garansi;
-        }
+class Elektronik extends Produk {
+    private String merek;
+    private int garansiTahun;
+    private static final double PPN = 0.11;
 
-        @Override
-        public void tampilInfo() {
-            System.out.println("Elektronik");
-            super.tampilInfo();
-            System.out.println("Garansi : " + garansi + " hari");
-        }
-        public void setGaransi(int garansi) {
-            if (garansi < 0) {
-                System.out.println("Masa berlaku harus lebih dari 0 hari.");
-            } else {
-                this.garansi = garansi;
-            }
-        }
-        
-    }
-
+}
