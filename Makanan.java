@@ -17,23 +17,18 @@ public class Makanan extends Produk {
         System.out.println("Makanan");
         System.out.println("Expired : " + expired + " hari");
     }
-    public void setExpired(int expired) {
-        if (expired < 0) {
-            System.out.println("Masa berlaku harus lebih dari 0 hari.");
-        } else {
-            this.expired = expired;
+    public double hitungDiskon(double harga) {
+        if (jumlahBeli >= 10) {
+            return hitungTotalHarga(jumlahBeli) * 0.05; // Diskon 10% untuk pembelian 10 atau lebih
         }
+        return 0;
     }
-    public void setExpired(int expired, String type) {
-        if (expired > 4) {
-            System.out.println("Masa berlaku harus lebih dari 0 hari.");
-        } else {
-        } if (expired < 2) {
-            System.out.println("Masa berlaku harus lebih dari 0 hari.");
-        } else {
-            this.expired = expired;
-        }
+    public double hitungTotalHargaDiskon(int jumlahBeli, double persenDiskon) {
+        return hitungTotalHarga(jumlahBeli) * (persenDiskon / 100);
     }
+    
+
+
     @Override
     public double hitungPajak(double harga) {
         return harga * 0.1; // Pajak 10% untuk makanan
