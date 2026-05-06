@@ -5,8 +5,9 @@ public class Makanan extends Produk {
         this.expired = expired;
     }
 
-    public void tampilkanData() {
-        super.tampilInfo();
+    @Override
+    public void tampilInfo() {
+        System.out.println("Makanan");
         System.out.println("Expired : " + expired + " hari");
     }
     public void setExpired(int expired) {
@@ -16,4 +17,20 @@ public class Makanan extends Produk {
             this.expired = expired;
         }
     }
+    public void setExpired(int expired, String type) {
+        if (expired > 4) {
+            System.out.println("Masa berlaku harus lebih dari 0 hari.");
+        } else {
+        } if (expired < 2) {
+            System.out.println("Masa berlaku harus lebih dari 0 hari.");
+        } else {
+            this.expired = expired;
+        }
+    }
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.1; // Pajak 10% untuk makanan
+    }
+
+    
 }
