@@ -43,17 +43,10 @@ abstract class Produk {
         
     }
 
+    public abstract void tampilInfo();
 
-    public void tampilInfo(){
-//semua atribut bisa diakses di sini - kita masih didalam class Produk
-        System.out.println("Produk  : " + nama);
-        System.out.println("Kategori: " + kategori);
-        System.out.println("Harga   : Rp." + harga);
-        System.out.println("Stok    : " + stok);
-        System.out.println("------------------");
-    }
 
-    public static void main(String[] args) {
+    public abstract double hitungPajak(double harga);{
         
     }
 
