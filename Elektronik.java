@@ -29,5 +29,11 @@ class Elektronik extends Produk {
         System.out.println("=========");
     }
 
-   
+    // OVERLOADING hitungPajak()
+
+    // Versi 1 — pajak standar PPN 11%
+    public double hitungDiskon(int jumlahBeli) {
+        return hitungTotalHarga(jumlahBeli) * PPN;
+    }
+
 }
