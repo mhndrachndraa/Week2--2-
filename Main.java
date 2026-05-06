@@ -8,8 +8,12 @@ public class Main {
         Makanan indomie = new Makanan("Indomie", 5000, 100, "Makanan", 30);
         Makanan roti = new Makanan("Roti", 10000, 50, "Makanan", 7);
 
-        
-        
+        System.out.println("Informasi Produk:");
+        laptop.tampilInfo();
+        smartphone.tampilInfo();
+        indomie.tampilInfo();
+        roti.tampilInfo();
+
     }
     
 }
