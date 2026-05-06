@@ -4,6 +4,13 @@ public class Makanan extends Produk {
         super(nama, harga, stok, kategori);
         this.expired = expired;
     }
+    public int getExpired() {
+        return expired;
+    }
+    public String getKategori() {
+        return kategori;
+    }
+    
 
     @Override
     public void tampilInfo() {
